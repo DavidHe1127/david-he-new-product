@@ -121,10 +121,6 @@ EKS/ECS can also be used to host a website. But, they don't have out-of-box supp
 
 Hosting a website on EC2 requires significant setup and ongoing management. This includes configuring networking, managing the server, implementing autoscaling and load balancing for high availability and scalability. You would also need to bake a custom AMI, preinstall and configure Nginx, and regularly patch the AMI for vulnerabilities. This approach adds considerable administrative overhead.
 
-#### Serverless (API Gateway + Lambda)
-
-Using API Gateway with Lambda also involves additional setup. While cold-start latency can be mitigated with provisioned concurrency, this architecture is primarily designed for hosting APIs rather than static websites.
-
 ### What would be required to make this a production grade website that would be developed by various development teams. The more detail, the better!
 
 I'd look from the following perspectives to transform it to a prod-ready website:
