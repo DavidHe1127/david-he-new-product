@@ -109,6 +109,10 @@ I'd make the follwing improvements:
 
 ### Alternative solutions that you could have taken but didn’t and explain why.
 
+#### S3 (Static Website Hosting)
+
+This method is the simplest and quickest to implement. However, it requires the bucket to be public which introduces a security risk. Plus, it doesn't support custom domain.
+
 #### Containerization Technologies
 
 EKS/ECS can also be used to host a website. But, they don't have out-of-box support for common features like caching and static content optimization etc you'd see in CDN (CloudFront). Additionally, setting up a production-ready EKS can be time-consuming and more costly. Therefore, they're not suitable.
