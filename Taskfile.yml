@@ -40,5 +40,15 @@ tasks:
       - pulumi preview --stack "${PULUMI_STACK}" --refresh --suppress-permalink=true --emoji --color always
 
   up:
+    deps:
+      - node_modules
+      - stack
     cmds:
       - pulumi up --stack "${PULUMI_STACK}" --yes --refresh --suppress-permalink=true --emoji --color always
+
+  destroy:
+    deps:
+      - node_modules
+      - stack
+    cmds:
+      - pulumi destroy --stack "${PULUMI_STACK}"
